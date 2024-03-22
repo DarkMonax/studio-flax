@@ -112,6 +112,11 @@ body {
   color: var(--primary-text-color);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   max-width: 1200px;
   padding-left: 15px;
@@ -201,17 +206,20 @@ p {
 }
 
 /* --------------Body----------------- */
-/*  ------------------Hero----------------*/
+/* ------------------Hero----------------*/
 .hero {
   background: var(--secondary-bg-color);
 }
 
 .hero__wrap {
   padding: 200px 0;
-  margin-bottom: 94px;
 }
 
 .hero__title {
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -221,8 +229,6 @@ p {
   text-align: center;
 
   color: var(--third-text-color);
-
-  margin-bottom: 30px;
 }
 
 .hero__btn {
@@ -246,11 +252,9 @@ p {
 
 /* -------------feature------------- */
 
-.feature__wrap {
-  margin-bottom: 94px;
-}
-
 .feature-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -271,7 +275,7 @@ p {
 /* ----------Work--------------- */
 
 .work-wrap {
-  margin-bottom: 94px;
+  padding-top: 0;
 }
 
 .section-work-title {
@@ -288,11 +292,6 @@ p {
 
 /* --------------Our Team---------------- */
 
-.team-wrap {
-  padding-top: 94px;
-  margin-bottom: 94px;
-}
-
 .section-team-title {
   font-weight: 700;
   font-size: 36px;
@@ -301,6 +300,10 @@ p {
   text-align: center;
 
   color: var(--primary-text-color);
+}
+
+.section-about-team {
+  margin-top: 30px;
 }
 
 .team-title {
@@ -326,6 +329,8 @@ p {
 /* ---------------Footer-------------- */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -362,9 +367,11 @@ address {
 }
 
 /* ----------------Portpholio------------- */
-.portpholio-wrap {
-  margin: 94px 0;
-}
+
+/* .portpholio-wrap {
+  padding-top: 60px;
+  padding-bottom: 60px;
+} */
 .container-btn {
   margin-bottom: 34px;
 }
@@ -385,6 +392,7 @@ address {
 .example-img {
   margin-bottom: 20px;
 }
+
 .example-title {
   margin-bottom: 4px;
 
