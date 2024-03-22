@@ -182,7 +182,7 @@ p {
   color: var(--secondary-logo-color);
 }
 
-.site-nav .link {
+.site-nav a {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -225,18 +225,6 @@ p {
   margin-bottom: 30px;
 }
 
-.list__btn {
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-
-  line-height: 1.625;
-  letter-spacing: 0.03em;
-  text-align: center;
-
-  border-radius: 4px;
-  color: var(--primary-text-color);
-}
 .hero__btn {
   display: block;
   padding: 10px 32px;
@@ -374,10 +362,29 @@ address {
 }
 
 /* ----------------Portpholio------------- */
+.portpholio-wrap {
+  margin: 94px 0;
+}
 .container-btn {
   margin-bottom: 34px;
 }
 
+.list__btn {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  border-radius: 4px;
+  color: var(--primary-text-color);
+}
+
+.example-img {
+  margin-bottom: 20px;
+}
 .example-title {
   margin-bottom: 4px;
 
