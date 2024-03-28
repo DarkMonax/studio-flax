@@ -167,6 +167,11 @@ p {
   padding-bottom: 25px;
 }
 
+.main-cont {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: var(--second-family);
   font-weight: 700;
@@ -187,7 +192,20 @@ p {
   color: var(--secondary-logo-color);
 }
 
-.site-nav a {
+.site-nav {
+  display: flex;
+  margin-left: 91px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -196,7 +214,20 @@ p {
   color: var(--primary-text-color);
 }
 
-.contact a {
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact .item + .item {
+  margin-left: 50px;
+}
+
+.contact .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.19;
@@ -252,6 +283,21 @@ p {
 
 /* -------------feature------------- */
 
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-list .item {
+  width: calc((100% - 90px) / 4);
+
+  margin-right: 30px;
+}
+
+.feature-list :last-child {
+  margin-right: 0;
+}
+
 .feature-title {
   margin-bottom: 10px;
 
@@ -278,6 +324,21 @@ p {
   padding-top: 0;
 }
 
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-list .item {
+  width: calc((100% - 60px) / 3);
+
+  margin-right: 30px;
+}
+
+.work-list :last-child {
+  margin-right: 0;
+}
+
 .section-work-title {
   margin-bottom: 50px;
 
@@ -291,6 +352,21 @@ p {
 }
 
 /* --------------Our Team---------------- */
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list .item {
+  width: calc((100% - 90px) / 4);
+
+  margin-right: 30px;
+}
+
+.team-list :last-child {
+  margin-right: 0;
+}
 
 .section-team-title {
   font-weight: 700;
@@ -372,8 +448,22 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 } */
+
 .container-btn {
   margin-bottom: 34px;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-list .item {
+  margin-right: 30px;
+}
+
+.btn-list :last-child {
+  margin-right: 0;
 }
 
 .list__btn {
@@ -387,6 +477,26 @@ address {
 
   border-radius: 4px;
   color: var(--primary-text-color);
+}
+
+.example {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example .item {
+  width: calc((100% - 60px) / 3);
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.example :nth-child(3n) {
+  margin-right: 0;
+}
+
+.example :nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .example-img {
